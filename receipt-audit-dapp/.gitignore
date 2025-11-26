@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Environment variables (RAHASIA!)
+.env
+.env*.local
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# System Files
+.DS_Store
+Thumbs.db

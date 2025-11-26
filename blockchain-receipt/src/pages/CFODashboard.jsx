@@ -265,7 +265,7 @@ const CFODashboard = () => {
         <div className="bg-slate-900/50 border border-white/5 rounded-2xl overflow-hidden backdrop-blur-sm">
           <div className="p-6 border-b border-white/5 flex justify-between items-center">
             <h3 className="font-bold text-white text-lg">Recent Transactions</h3>
-            <Button variant="ghost" size="sm" onClick={() => navigate("/auditor/submissions")}>View Full Ledger →</Button>
+            <Button variant="ghost" size="sm" onClick={() => navigate("/ledger")}>View Full Ledger →</Button>
           </div>
           <div className="overflow-x-auto">
              <table className="w-full text-left text-sm">

@@ -13,6 +13,7 @@ import ReceiptDetail from "./pages/ReceiptDetail"; // <--- IMPORT BARU (Halaman 
 import CFODashboard from "./pages/CFODashboard";
 import Reports from "./pages/Reports";
 import ReportHistory from "./pages/ReportHistory"; // <--- IMPORT BARU
+import FullLedger from "./pages/FullLedger"; // <--- IMPORT BARU
 
 // Pages - Phase 3 (ZK Proofs)
 import ZKDashboard from "./pages/ZKDashboard";
@@ -122,6 +123,16 @@ function App() {
             <ReceiptDetail />
           </ProtectedRoute>
         }
+      />
+
+      {/* ROUTE BARU UNTUK CFO */}
+      <Route 
+        path="/ledger" 
+        element={
+          <ProtectedRoute allowedRoles={["cfo"]}>
+            <FullLedger />
+          </ProtectedRoute>
+        } 
       />
 
       {/* Fallback */}
